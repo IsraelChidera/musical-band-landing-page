@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 1.6;
+	font-family: ;
+	background: url('../img/band-bg.jpg') no-repeat center center/cover;
+	height: 100vh;
+	max-width: 1200px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#text {
+	color: #778899;
+}
+/*Navbar*/
+#navbar {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+#navbar #logo {
+	margin: 10px;
+	font-size: 30px;
+	cursor: pointer;	
+}
+
+#navbar ul {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 18px;
+	line-height: 2.0;
+	margin-top: 8px;
+}
+
+#navbar ul li a {
+	padding-left: 15px;
+	padding-right: 8px;
+	color: #FFE4E1;
+	font-family: 'Raleway', sans-serif;
+}
+
+#navbar ul li a:hover {
+	color: whitesmoke;
+	border-bottom: 0.5px solid #f49ed7;
+	margin-top: -2px;
+}
+
+/*Content*/
+#content {
+	max-width: 500px; 
+	margin-top: 9rem;
+	margin-left: 10px;
+}
+
+#content h1 {
+	font-size: 4rem;
+}
+
+#content p {
+	font-size: 1.5rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+#content #btn {
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	color: 	black;
+	background: lightblue;
+	font-size: 1rem;
+	width: 30%;
+}
