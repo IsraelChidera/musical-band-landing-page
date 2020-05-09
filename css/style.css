@@ -26,34 +26,37 @@ ul {
 }
 /*Navbar*/
 #navbar {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1rem;
 }
 #navbar #logo {
-	margin: 10px;
 	font-size: 30px;
-	cursor: pointer;	
+	cursor: pointer;
+	letter-spacing: 2px;
+	font-weight: 200px;
+	text-transform: uppercase;
+	padding-left: 5px;	
 }
 
 #navbar ul {
+	list-style-type: none;
+}
+
+#navbar #nav_keys {
 	display: flex;
-	justify-content: flex-end;
-	font-size: 18px;
-	line-height: 2.0;
-	margin-top: 8px;
 }
 
 #navbar ul li a {
-	padding-left: 15px;
-	padding-right: 8px;
+	padding-right: 20px;
 	color: #FFE4E1;
 	font-family: 'Raleway', sans-serif;
 }
 
 #navbar ul li a:hover {
 	color: whitesmoke;
-	border-bottom: 0.5px solid #f49ed7;
-	margin-top: -2px;
+	border-bottom: 0.5px solid #f49ed7;	
+	opacity: 0.8;
 }
 
 /*Content*/
@@ -80,4 +83,32 @@ ul {
 	background: lightblue;
 	font-size: 1rem;
 	width: 30%;
+}
+
+@media (max-width: 500px) {
+	#navbar #logo {
+		display: none;	
+	}
+
+	#navbar {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+	#content {
+	max-width: 300px; 
+	margin-top: 5rem;
+	margin-left: 10px;
+}
+
+#content h1 {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+#content p {
+	font-size: 1rem;
+}
+
 }
